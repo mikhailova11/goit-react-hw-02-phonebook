@@ -1,12 +1,12 @@
 import React from "react";
-// import s from "./ContactForm.module.css";
+import s from "./ContactForm.module.css";
 
 const ContactForm = () => {
     return (
-        <form>
-            <label>
+        <form className={s.form}>
+            <label className={s.label}>
                 Name
-                <input
+                <input className={s.input}
                 type="text"
                 name="name"
                 pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -14,9 +14,9 @@ const ContactForm = () => {
                 required
                 />
             </label>
-            <label>
+            <label className={s.label}>
                 Number
-                <input
+                <input className={s.input}
                 type="tel"
                 name="number"
                 pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -25,7 +25,7 @@ const ContactForm = () => {
                 />
             </label>
 
-            <button type="submit">Add contact</button>
+            <button className={s.button} type="submit">Add contact</button>
         </form>
     )
 }

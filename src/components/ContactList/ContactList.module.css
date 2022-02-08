@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  color: #525151;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(122, 43, 226, 0.178);
+  margin-left: 10px;
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(122, 43, 226, 0.281);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #525151;
+}
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.item::before {
+  content: '-';
+  color: #525151;
+}
+.list {
+  margin-left: 0 auto;
+}
