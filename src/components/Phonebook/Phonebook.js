@@ -1,4 +1,7 @@
 import React from "react";
+import ContactForm from "../ContactForm";
+import Filter from "../Filter";
+import ContactList from "../ContactList";
 // import s from "./Phonebook.module.css";
 
 class Phonebook extends React.Component {
@@ -6,41 +9,13 @@ class Phonebook extends React.Component {
     render() {
         return (
             <div>
-                <h3>Phonebook</h3>
-                <form>
-                    <label>
-                        Name
-                        <input
-                        type="text"
-                        name="name"
-                        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                        title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-                        required
-                        />
-                    </label>
-                    <label>
-                        Number
-                        <input
-                        type="tel"
-                        name="number"
-                        pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                        title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-                        required
-                        />
-                    </label>
+                <h1>Phonebook</h1>
+                <ContactForm  />
 
-                    <button type="submit">Add contact</button>
-                </form>
+                <h2>Contacts</h2>
+                <Filter  />
+                <ContactList  />
 
-                <h3>Contacts</h3>
-                <label>
-                        Find contacts by name
-                        <input/>
-                    </label>
-                <ul>
-                    <li>{}</li>
-                    <button type="submit">Delete</button>
-                </ul>
             </div>
             
         )
