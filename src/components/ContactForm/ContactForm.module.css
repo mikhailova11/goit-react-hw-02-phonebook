@@ -12,6 +12,7 @@
   color: #757575;
   margin-top: 10px;
 }
+
 .input {
   margin-left: 10px;
   padding: 5px;
@@ -20,6 +21,10 @@
   background-color: rgba(122, 43, 226, 0.137);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  outline: 1px solid rgba(142, 18, 167, 0.322);
+}
+input:focus {
+  outline: 3px solid rgba(164, 60, 185, 0.541);
 }
 .button {
   display: block;
@@ -34,11 +39,13 @@
   color: #525151;
   border-radius: 5px;
   border: none;
-  background-color: rgba(122, 43, 226, 0.178);
+  background-color: rgba(122, 43, 226, 0.24);
+  outline: 2px solid rgba(164, 60, 185, 0.582);
+  cursor: pointer;
 }
-.button:hover,
-.button:focus {
+.button:hover {
   background-color: rgba(122, 43, 226, 0.281);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
